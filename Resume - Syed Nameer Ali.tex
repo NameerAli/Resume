@@ -1,0 +1,211 @@
+\documentclass[letterpaper,11pt]{article}
+
+% =======================
+%   PACKAGE INCLUDES
+% =======================
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% =======================
+%   PAGE SETUP
+% =======================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[top=0.2in, bottom=0.3in, left=0.3in, right=0.3in]{geometry}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% =======================
+%   CUSTOM COMMANDS
+% =======================
+
+% Bullet point for resume items
+\newcommand{\resumeItem}[1]{
+  \item[\vcenter{\hbox{\tiny$\bullet$}}] \small{#1 \vspace{-2pt}}
+}
+
+% Subheading for jobs/education
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Simple subheading for certificates
+\newcommand{\resumeSimpleSubheading}[2]{
+  \item \textbf{#1} \hfill \textit{\small #2} \vspace{-3pt}
+}
+
+% Project subheading
+\newcommand{\resumeProjectSimple}[2]{
+  \item \textbf{#1} \hfill \textit{\small #2} \vspace{-3pt}
+}
+
+% List environments for items and subheadings
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% =======================
+%   DOCUMENT START
+% =======================
+
+\begin{document}
+
+% ----- NAME & CONTACT -----
+\begin{center}
+    \textbf{\Huge \scshape Syed Nameer Ali}
+\end{center}
+\begin{center}
+  \small
+  (+92)-335-2929504 $|$
+  \href{mailto:s.nameer18606@gmail.com}{\underline{s.nameer18606@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/syednameerali/}{\underline{linkedin.com/in/syednameerali}} $|$
+  \href{https://github.com/NameerAli}{\underline{github.com/NameerAli}}
+\end{center}
+
+% =======================
+%   EDUCATION
+% =======================
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.iba.edu.pk/}{Institute of Business Administration (IBA)}}
+    {Karachi, PK}
+    {B.S. Computer Science}
+    {Aug. 2019 -- Jun. 2023}
+    \resumeItemListStart
+      \resumeItem{Relevant Courses: Statistical Inference, Data Mining, Data Warehousing, Computer Vision, Algorithms, Design Patterns, Web Application Development, Business Intelligence.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% =======================
+%   EXPERIENCE
+% =======================
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.pingkode.com/}{PingKode}}
+      {Karachi, PK}
+      {Software Engineer}
+      {Aug. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developing backend systems with \textbf{Django} for a medical appointment booking platform, integrating secure authentication, appointment scheduling, and user management.}
+        \resumeItem{Integrating a conversational AI chatbot into an existing HRMS web application using \textbf{LangChain}, enabling real-time candidate and employee queries through natural language understanding.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://www.sofstica.com/}{Sofstica Solutions PVT. LTD}}
+    {Karachi, PK}
+    {Software Engineer AI}
+    {Oct. 2023 -- July 2025}
+    \resumeItemListStart
+      \resumeItem{Engineered and deployed \href{https://www.innohlth.ai}{\textbf{RRS-Copilot}}, an intelligent agentic AI system validated on the \textbf{MIMIC FHIR dataset}, achieving \textbf{87\% sensitivity} in predicting clinical deterioration and delivering \textbf{6-hour advance alerts} to healthcare professionals, potentially preventing critical patient outcomes.}
+      \resumeItem{Developed LLM-powered clinical decision support system using \textbf{LangGraph} for multi-step reasoning and \textbf{FastAPI} for deployment, reducing false-positive alerts by 42\% compared to standard rule-based clinical scoring systems over 6-month pilot study.
+}
+      \resumeItem{Architected and developed the \textbf{{Provider In}tegrated System (PIS)}, an enterprise-grade middleware solution using \textbf{Spring Boot} that enables seamless interoperability across major EHR providers including \textbf{Cerner, Epic, and Meditech}, supporting both \textbf{HL7v2 and FHIR} standards for real-time and request-response healthcare data exchange.}
+    \resumeItemListEnd
+\resumeSubheading
+    {\href{https://folio3.com/}{Folio3 PVT. LTD}}
+    {Karachi, PK}
+    {Artificial Intelligence Intern}
+    {Jul. 2022 -- Aug. 2022}
+    \resumeItemListStart
+        \resumeItem{Developed a real-time \textbf{\href{https://github.com/ZohairAbbas/Number-Plate-Detection}{number plate recognition system}} with \textbf{YOLOv5 + OCR}, achieving 88\% accuracy and 50\% faster processing.}
+        \resumeItem{Built ML pipelines for data cleaning, feature engineering, training, and evaluation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% =======================
+%   PROJECTS
+% =======================
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectSimple
+    {\href{https://github.com/nameerali/courtconnect}{CourtConnect – Indoor Sports Court Booking Platform}}
+    {2025}
+    \resumeItemListStart
+      \resumeItem{Built a full-stack app \textbf{(Django/DRF} + \textbf{Next.js}) with \textbf{JWT} auth, role-based access (Player/Owner/Admin), court management, and search/filters.}
+      \resumeItem{Implemented conflict-free time-slot booking and availability APIs; Stripe payments/webhooks in progress.}
+    \resumeItemListEnd
+    
+  \resumeProjectSimple
+    {\href{https://github.com/saadhzubairi/FYP-TalentHive}{Talent Hive – AI-powered HR Management System (FYP)}}
+    {Spring 2023}
+    \resumeItemListStart
+      \resumeItem{Engineered a full-stack Human Resource Management System to streamline recruitment workflows for HR departments.}
+      \resumeItem{Built a custom \textbf{SpaCy Named Entity Recognition (NER)} model for intelligent resume parsing and auto-tagging.}
+      \resumeItem{Integrated candidate scoring, resume ranking, and structured profile visualization to enhance decision-making.}
+    \resumeItemListEnd
+
+  \resumeProjectSimple
+    {\href{https://github.com/NameerAli/PaperTalk-Chat-with-PDFs}{PaperTalk – Chat with PDFs}}
+    {2023}
+    \resumeItemListStart
+      \resumeItem{Built a conversational PDF assistant using \textbf{LangChain, Streamlit, ChatGPT, and Hugging Face LLMs}.}
+      \resumeItem{Optimized backend with multithreading and vector embeddings, reducing response time by \textbf{40\%}.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% =======================
+%   CERTIFICATIONS
+% =======================
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Datacamp}{: \href{https://www.datacamp.com/statement-of-accomplishment/course/51881279c5ea4895768177f9660af650dbd09545}{Intermediate SQL}, 
+      \href{https://www.datacamp.com/statement-of-accomplishment/course/1734f2afa864fac67a97598d78957d6886265d9f}{Intermediate Python}, 
+      \href{https://www.datacamp.com/completed/statement-of-accomplishment/course/92a798aaa98b0b56b4ddabd0e10f520a70cd66e4}{Understanding Machine Learning}}
+      \\
+      \textbf{Coursera}{: \href{https://www.coursera.org/account/accomplishments/certificate/U27GDBJEHSXG}{AI For Everyone}, 
+      \href{https://www.coursera.org/account/accomplishments/certificate/6U94DU6JQ49H}{Foundations of Data Science}, Machine Learning Specialization}
+      \\
+      \textbf{Kaggle}{: \href{https://www.kaggle.com/learn/certification/syednameerali/intro-to-machine-learning}{Intro to Machine Learning}, 
+      \href{https://www.kaggle.com/learn/certification/syednameerali/intermediate-machine-learning}{Intermediate Machine Learning}}
+    }
+  }
+\end{itemize}
+
+% =======================
+%   SKILLS & INTERESTS
+% =======================
+\section{Skills \& Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Programming Languages:} Java, Python, SQL \\
+      \textbf{Web \& API Development:} FastAPI, Spring Boot, Flask, Django, Pydantic \\
+      \textbf{AI/ML Frameworks:} LangChain, LangGraph, Ollama, LangSmith, TensorFlow, Gemini CLI, Claude Code, n8n \\
+      \textbf{Databases \& Storage:} MySQL, PostgreSQL, MongoDB, Redis, AWS S3 \\
+      \textbf{DevOps \& Tools:} Git, Docker, GitHub Actions, AWS EC2, RabbitMQ
+    }
+  }
+\end{itemize}
+
+\end{document}
